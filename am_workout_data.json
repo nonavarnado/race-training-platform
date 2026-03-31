@@ -1,0 +1,138 @@
+{
+  "source_workbook": "DualRace_Training_v7_SPINE_INTEGRATED_20260330_1657.xlsx",
+  "extraction_date": "2026-03-31T11:24:20.966888",
+  "spine_exercises": {},
+  "strength_foundations": {},
+  "weekly_variations": {},
+  "raw_extraction": [
+    {
+      "row": 2,
+      "data": [
+        "Day",
+        "AM Workout",
+        "PM Workout",
+        "Duration",
+        "Elevation",
+        "Nutrition",
+        "Career",
+        "Notes",
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "row": 3,
+      "data": [
+        "Monday",
+        "Mobility Flow 15-20min\n• Cat-Cow 10x\n• Hip 90/90 stretches\n• Ankle mobility",
+        "REST or easy spin 30min",
+        "15-50min",
+        "-",
+        "Weigh-in. Protein 140-150g daily.",
+        "Import companies to Notion",
+        "Week 1 begins!",
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "row": 4,
+      "data": [
+        "Tuesday",
+        "💪 UPPER BODY (15-20 min)\n🎥 https://www.youtube.com/watch?v=UyrYMWnXJ3k\n   Mind Pump TV - 15 Min Beginner KB\n• Pushups 3x8 (knees OK if needed)\n• KB Rows 3x8 @ 18lb\n• KB Overhead Press 3x8 @ 18lb\n\n\n🦴 SPINE SESSION A (10-15 min) - FOUNDATION\n\n🎥 Dead Bug: https://www.youtube.com/watch?v=I5z90fC9YpI\n• Hold 8lb DB vertically, 3x6-8 slow reps/side\n\n🎥 Suitcase Carry: https://www.youtube.com/watch?v=U5zrloYWwxw\n• 18lb KB, 3x30sec/side\n\n🎥 Hip Thrust: https://www.youtube.com/watch?v=LM8XHLYJoYs\n• Glute Bridge 3x12 @ bodyweight",
+        "🏃 Easy Run\nRose Bowl Loop 0.75-1 lap (20-30 min easy)",
+        "60-75min",
+        "<200 ft",
+        "Post-run shake. Carbs 150-180g.",
+        "Update LinkedIn profile",
+        "Easy aerobic pace",
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "row": 5,
+      "data": [
+        "Wednesday",
+        "🧘 Yoga 30min\nBasic hip openers",
+        "REST",
+        "30min",
+        "-",
+        "Light day -200 cal",
+        "Research CEC positions",
+        "Recovery",
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "row": 6,
+      "data": [
+        "Thursday",
+        "💪 LOWER BODY (15-20 min)\n🎥 https://www.youtube.com/watch?v=6xwGFn-J_QA\n   Mark Wildman - Goblet Squat Tutorial\n• Goblet Squats 3x8 @ 18lb\n• Single-Leg DL 3x6 each @ bodyweight\n• Reverse Lunges 3x8 each @ bodyweight\n\n\n🦴 SPINE SESSION B (10-15 min) - FOUNDATION\n\n🎥 Plank: https://www.youtube.com/watch?v=pSHjTRCQxIw\n• 3x20-45sec, progress duration only\n\n🎥 Bird Dog: https://www.youtube.com/watch?v=vKPGe2h3uag\n• 3x6 slow reps/side, 2sec pause\n\n🎥 KB RDL: https://www.youtube.com/watch?v=V8VdYy7y3s8\n• 18lb KB, 3x6-8 reps, slow descent",
+        "🏃 Easy Run\nArroyo Seco easy 30-40 min",
+        "60-90min",
+        "200-400 ft",
+        "Training calories.",
+        "Draft LinkedIn post #1",
+        "Quality workout",
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "row": 7,
+      "data": [
+        "Friday",
+        "Mobility 20min",
+        "COMPLETE REST",
+        "20min",
+        "-",
+        "Weekend prep. Treat meal OK",
+        "Weekly Notion review",
+        "Weekly checkpoint",
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "row": 8,
+      "data": [
+        "Saturday",
+        "🏃 LONG RUN: 3-4 mi\nLower Arroyo Seco out/back",
+        "Post-run: Foam roll, stretch 20min",
+        "40min",
+        "200-500 ft",
+        "Big breakfast 2hrs before. Water every 20min. Post-run meal <30min. Carbs 220-250g.",
+        "CEC applications (2hrs)",
+        "Week 1 long run",
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "row": 9,
+      "data": [
+        "Sunday",
+        "🚴 LONG RIDE: 75-90min\nChevy Chase climb easy pace",
+        "Post-ride: Stretch, recovery",
+        "75-90min",
+        "800-1200 ft",
+        "Breakfast 2-3hrs before. 1 bottle/hr. Carbs 250-300g.",
+        "Week planning",
+        "Week 1 long ride",
+        null,
+        null,
+        null
+      ]
+    }
+  ],
+  "_note": "Manual parsing required - stored raw data from detected section"
+}

@@ -1,0 +1,96 @@
+# Python Virtual Environment - NEVER commit this (huge, machine-specific)
+.venv/
+venv/
+env/
+ENV/
+
+# RegPolicyTools - Separate Git repository (managed independently)
+RegPolicyTools/
+
+# Python cache and compiled files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# SENSITIVE: Credentials and API keys - CRITICAL SECURITY
+**/creds/
+**/credentials.json
+**/*credentials*.json
+*.key
+*.pem
+.env
+.env.local
+
+# Temporary and output files
+*.sas7bdat
+temp*.py
+temp*.sas7bdat
+**/temp/
+**/temp_output*/
+
+# SAS configuration (may contain credentials)
+sascfg_personal.py
+temp_sascfg.py
+
+# Excel and data outputs (can be large, regenerated)
+*.xlsx
+*.xls
+*.xlsm
+!**/templates/*.xlsx  # Keep template files
+
+# Archive folders (old versions)
+_ARCHIVE_*/
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Build artifacts
+build/
+dist/
+*.egg-info/
+*.egg
+
+# Test outputs and logs
+*.log
+test_output/
+output.txt
+*.out
+
+# Database dumps and large data files
+*.db
+*.sqlite
+*.sqlite3
+*.dump
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Documentation build outputs
+docs/_build/
+
+# Personal training data
+.env
+*.xlsx
+*.xls
+*_BACKUP_*.xlsx
+~$*.xlsx
+
+# Work projects (exclude from personal repo)
+RegPolicyTools/
+hana_connector/
+_ARCHIVE*/
+*DBA*.xlsx
+*CIA*.xlsx
+*BOBJ*.xlsx
+*NBT*.xlsx

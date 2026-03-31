@@ -1,0 +1,241 @@
+{
+  "_comment": "Nona's Dual-Race Training Configuration - March 30 to August 9, 2026",
+  "_races": "Holcomb Valley 15mi Run (June 13) + Truckee Gravel 66mi Bike (June 27)",
+  "_nutrition_goal": "8-10 lbs fat loss while maintaining race performance",
+  
+  "athlete": {
+    "name": "Nona Varnado",
+    "email": "",
+    "current_fitness": {
+      "run_base_distance": 3.0,
+      "bike_base_distance": 10.0,
+      "weight_lbs": 170,
+      "target_weight_lbs": 155,
+      "base_run_pace_per_mile": "11:30",
+      "base_bike_speed_mph": 15
+    },
+    "equipment": {
+      "kettlebells_lbs": [18, 35],
+      "dumbbells_lbs": [3, 8],
+      "resistance_bands": true,
+      "foam_roller": true,
+      "yoga_mat": true,
+      "bosu_ball": true,
+      "stability_ball": true
+    }
+  },
+  
+  "training_plan": {
+    "start_date": "2026-03-30",
+    "total_weeks": 20,
+    "race_weeks": [11, 13],
+    "goal_summary": "Dual endurance races (15mi trail run + 66mi gravel bike) with body composition improvement"
+  },
+  
+  "races": [
+    {
+      "week": 11,
+      "date": "2026-06-13",
+      "name": "Holcomb Valley Trail Run",
+      "type": "run",
+      "distance_miles": 15,
+      "elevation_feet": 2800,
+      "notes": "Mountain trail race at 7000ft altitude. Focus: endurance + elevation"
+    },
+    {
+      "week": 13,
+      "date": "2026-06-27",
+      "name": "Truckee Gravel Gran Fondo",
+      "type": "bike",
+      "distance_miles": 66,
+      "elevation_feet": 5500,
+      "notes": "Gravel cycling event, 40% dirt roads. Focus: endurance + power on varied terrain"
+    }
+  ],
+  
+  "nutrition_plan": {
+    "phases": [
+      {
+        "name": "Kitchen Clean-Out / Transition",
+        "start_date": "2026-03-30",
+        "end_date": "2026-04-03",
+        "duration_days": 5,
+        "food_strategy": "finish_existing_food",
+        "calories": "maintenance",
+        "detail_level": "general_guidance",
+        "notes": "Use up whatever is in kitchen. No grocery shopping. Psychological preparation for strict phase starting April 4."
+      },
+      {
+        "name": "Ultra-Constrained",
+        "start_date": "2026-04-04",
+        "end_date": "2026-04-17",
+        "duration_weeks": 2,
+        "food_list": "ultra_constrained",
+        "deficit_calories": 500,
+        "detail_level": "full_meal_plans",
+        "notes": "Most restrictive phase. Establish baseline, reduce inflammation, identify food sensitivities."
+      },
+      {
+        "name": "Constrained - First Expansion",
+        "start_date": "2026-04-18",
+        "end_date": "2026-04-24",
+        "duration_days": 7,
+        "food_list": "constrained_expanded",
+        "deficit_calories": 500,
+        "detail_level": "meal_templates",
+        "notes": "Reintroduce Greek yogurt and additional vegetables. Monitor for sensitivities."
+      },
+      {
+        "name": "Build - Expanded Diet",
+        "start_date": "2026-04-25",
+        "end_date": "2026-06-07",
+        "duration_weeks": 6,
+        "food_list": "expanded",
+        "deficit_calories": 200,
+        "detail_level": "macro_targets_with_examples",
+        "notes": "Gradual food reintroduction while training volume increases. Moderate deficit to fuel workouts."
+      },
+      {
+        "name": "Taper & Race Fueling",
+        "start_date": "2026-06-08",
+        "end_date": "2026-06-28",
+        "duration_weeks": 3,
+        "food_list": "performance",
+        "deficit_calories": 0,
+        "detail_level": "race_specific",
+        "notes": "Performance priority. Glycogen loading for races. Maintenance or slight surplus calories."
+      },
+      {
+        "name": "Post-Race - Ultra-Constrained Adaptive",
+        "start_date": "2026-06-29",
+        "end_date": "2026-08-09",
+        "duration_weeks": 7,
+        "food_list": "ultra_constrained",
+        "customization_mode": "scenarios_and_manual",
+        "default_deficit": 300,
+        "detail_level": "macro_targets_with_examples",
+        "notes": "Return to ultra-constrained food list. Flexible based on new goals (new race, strength, maintenance)."
+      }
+    ],
+    
+    "food_lists": {
+      "ultra_constrained": {
+        "description": "Extreme elimination for baseline establishment",
+        "proteins": ["Eggs", "Chicken breast", "White fish (cod, tilapia)"],
+        "carbs": ["White potatoes", "Sweet potatoes"],
+        "vegetables": ["Carrots only"],
+        "fats": ["Minimal olive or avocado oil (cooking only, <1 tbsp/day)"],
+        "drinks": ["Water", "Black coffee", "Herbal tea"],
+        "forbidden": [
+          "All other vegetables",
+          "All fruits",
+          "All grains (rice, oats, bread)",
+          "All dairy",
+          "All nuts and seeds",
+          "Processed foods",
+          "Sugar",
+          "Alcohol"
+        ]
+      },
+      
+      "constrained_expanded": {
+        "description": "First reintroduction - dairy and vegetables",
+        "base": "ultra_constrained",
+        "add_dairy": ["Plain Greek yogurt (unsweetened)"],
+        "add_vegetables": ["Broccoli", "Spinach", "Cucumbers", "Bell peppers", "Zucchini"],
+        "still_forbidden": [
+          "Grains beyond potatoes",
+          "Most fruits (except maybe berries with yogurt)",
+          "Nuts",
+          "Processed foods"
+        ]
+      },
+      
+      "expanded": {
+        "description": "Gradual reintroduction while fueling training",
+        "base": "constrained_expanded",
+        "add_proteins": ["Turkey", "Salmon", "Tofu"],
+        "add_carbs": ["Rice (white/brown)", "Oats", "Quinoa"],
+        "add_fruits": ["Bananas", "Berries", "Apples"],
+        "add_fats": ["Avocado", "Almonds", "Walnuts"],
+        "add_treats": ["Dark chocolate 85%+"],
+        "reintroduce_schedule": "Week-by-week to identify sensitivities"
+      },
+      
+      "performance": {
+        "description": "Race fueling priority",
+        "base": "expanded",
+        "emphasis": "High carbs for glycogen loading",
+        "add_race_specific": ["Sports gels/chews", "Electrolyte drinks", "Simple carbs for quick energy"],
+        "timing": "Carb loading 2-3 days before races, simple carbs during long rides"
+      }
+    },
+    
+    "meal_examples": {
+      "ultra_constrained": {
+        "breakfast": "3 scrambled eggs cooked in minimal olive oil + 1 medium sweet potato, baked (450 cal)",
+        "lunch": "6oz grilled chicken breast + 2 cups steamed carrots + 1 medium white potato, baked (550 cal)",
+        "dinner": "6oz baked white fish (cod) + 2 cups roasted carrots + 1 sweet potato (500 cal)",
+        "snack": "2 hard-boiled eggs (200 cal)",
+        "total_calories": "~1700 cal (500 deficit from ~2200 TDEE)"
+      },
+      
+      "constrained_expanded": {
+        "changes": "Add 1 cup Greek yogurt to breakfast, replace carrots with mixed veggies (broccoli, spinach, peppers), add cucumber salad"
+      },
+      
+      "expanded": {
+        "approach": "Macro targets - 30% protein, 45% carbs, 25% fat. ~2000 cal/day",
+        "examples": "Protein: 150g (6oz chicken or 2 cups Greek yogurt), Carbs: 225g (1.5 cups rice or 2 cups oats), Fat: 56g (2oz almonds or 1 avocado)"
+      }
+    }
+  },
+  
+  "am_workouts": {
+    "_note": "Will be populated by extract_am_workouts.py from existing workbook",
+    "spine_exercises": {
+      "frequency": "daily",
+      "duration": "10min",
+      "youtube_channel": "Bob & Brad",
+      "exercises_placeholder": "Cobra, Child's Pose, Cat-Cow, Knee-to-Chest with video links"
+    },
+    "strength_foundations": {
+      "frequency": "3x per week (Mon/Wed/Fri)",
+      "duration": "10min",
+      "exercises_placeholder": "Push-ups, Squats, Plank, Glute bridges"
+    }
+  },
+  
+  "workout_templates": {
+    "easy_run": {
+      "type": "time_based",
+      "effort": "60-70% max HR",
+      "pace": "Conversational (can hold full conversation)",
+      "notes": "Focus on consistency, not speed"
+    },
+    "long_run": {
+      "type": "distance_based",
+      "effort": "65-75% max HR",
+      "pace": "Easy-moderate (slightly slower than easy run)",
+      "progression": "Increase 10% per week, max 13mi for 15mi race"
+    },
+    "tempo_run": {
+      "type": "structured",
+      "effort": "80-85% max HR",
+      "pace": "Comfortably hard (can speak in short phrases)",
+      "structure": "10min warmup + tempo segment + 10min cooldown"
+    },
+    "bike_endurance": {
+      "type": "time_based",
+      "effort_equivalent": "Same as easy run",
+      "time_multiplier": 2.0,
+      "distance_multiplier": 3.5,
+      "notes": "Cycling at similar effort as easy run. Longer duration, more miles due to speed difference."
+    },
+    "bike_long": {
+      "type": "distance_based",
+      "effort_equivalent": "Same as long run",
+      "progression": "Increase 10% per week, max 55mi for 66mi race"
+    }
+  }
+}

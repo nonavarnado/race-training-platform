@@ -1,0 +1,98 @@
+{
+  "_comment": "TEMPLATE - Copy this file and customize for your own training plan",
+  "_instructions": "1. Replace all placeholder values with your actual data. 2. Delete sections starting with underscore (_). 3. Validate with: python validate_config.py --config your_config.json",
+  
+  "athlete": {
+    "name": "YOUR_NAME_HERE",
+    "email": "your.email@example.com",
+    "current_fitness": {
+      "_comment": "Your current baseline fitness levels",
+      "run_base_distance": 3.0,
+      "_run_base_distance_help": "Longest comfortable run distance in miles",
+      "bike_base_distance": 10.0,
+      "_bike_base_distance_help": "Longest comfortable bike ride in miles",
+      "weight_lbs": 170,
+      "target_weight_lbs": 155,
+      "_weight_note": "Set target_weight_lbs = weight_lbs if no body comp goal",
+      "base_run_pace_per_mile": "11:30",
+      "_pace_help": "Format: MM:SS per mile at easy conversational effort",
+      "base_bike_speed_mph": 15
+    }
+  },
+  
+  "training_plan": {
+    "start_date": "2026-03-30",
+    "_date_format": "YYYY-MM-DD",
+    "total_weeks": 20,
+    "_total_weeks_help": "How many weeks from start to end (typically 12-24)",
+    "race_weeks": [11, 13],
+    "_race_weeks_help": "Which week numbers contain races",
+    "goal_summary": "Describe your primary and secondary goals here"
+  },
+  
+  "races": [
+    {
+      "_comment": "Add one object per race. Remove if no races (training only)",
+      "week": 11,
+      "_week_help": "Which training week this race occurs in",
+      "date": "2026-06-13",
+      "name": "Race Name Here",
+      "type": "run",
+      "_type_options": "run, bike, swim, multi",
+      "distance_miles": 15,
+      "elevation_feet": 2800,
+      "_elevation_optional": "Can omit elevation_feet if flat course",
+      "notes": "Any special considerations: altitude, terrain, weather, etc."
+    }
+  ],
+  
+  "nutrition_plan": {
+    "_comment": "Customize phases based on your goals. Common patterns: weight_loss (aggressive deficit early), race_only (maintenance calories), muscle_gain (surplus)",
+    "phases": [
+      {
+        "name": "Foundation Phase",
+        "start_date": "2026-03-30",
+        "end_date": "2026-04-26",
+        "duration_weeks": 4,
+        "_duration_help": "Specify EITHER duration_weeks OR duration_days, not both",
+        "food_list": "constrained",
+        "_food_list_options": "ultra_constrained, constrained, expanded, performance",
+        "deficit_calories": 500,
+        "_deficit_help": "Calories below TDEE. Use 0 for maintenance, negative for surplus",
+        "detail_level": "macro_targets_with_examples",
+        "_detail_options": "general_guidance, full_meal_plans, meal_templates, macro_targets_with_examples, race_specific",
+        "notes": "Optional notes about this phase"
+      }
+    ],
+    
+    "food_lists": {
+      "_comment": "Define your own food lists or use templates. ultra_constrained = most restrictive, expanded = most variety",
+      "constrained": {
+        "description": "Moderate restriction for healthy eating",
+        "proteins": ["Chicken", "Fish", "Eggs", "Greek yogurt"],
+        "carbs": ["Rice", "Oats", "Sweet potato", "Quinoa"],
+        "vegetables": ["Broccoli", "Spinach", "Carrots", "Peppers"],
+        "fats": ["Olive oil", "Avocado", "Almonds"],
+        "forbidden": ["Processed foods", "Added sugar", "Alcohol"]
+      }
+    }
+  },
+  
+  "am_workouts": {
+    "_comment": "Optional morning workout routine. Can omit entire section if not applicable",
+    "spine_exercises": {
+      "frequency": "daily",
+      "duration": "10min",
+      "exercises": ["Describe your exercises here"]
+    }
+  },
+  
+  "workout_templates": {
+    "_comment": "Optional custom workout definitions. System has defaults if omitted",
+    "easy_run": {
+      "type": "time_based",
+      "effort": "60-70% max HR",
+      "pace": "Conversational"
+    }
+  }
+}
